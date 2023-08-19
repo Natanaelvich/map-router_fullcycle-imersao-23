@@ -3,15 +3,18 @@ version: "3"
 services:
 
   mongo:
-    image: bitnami/mongodb:latest
-    volumes:
-      - mongodb_data:/bitnami/mongodb
+    image: 'bitnami/mongodb:4.4'
     environment:
-      MONGODB_ROOT_PASSWORD: root
-      MONGODB_REPLICA_SET_MODE: primary
-      MONGODB_REPLICA_SET_KEY: 123456
-      MONGODB_DATABASE: map_router
+      - MONGODB_ROOT_USER=root
+      - MONGODB_ROOT_PASSWORD=example
+      - MONGODB_REPLICA_SET_KEY=replicasetkey123
+      - MONGODB_ADVERTISED_HOSTNAME=127.0.0.1
+      - MONGODB_REPLICA_SET_MODE=primary
+    ports:
+      - '27017:27017'
+    volumes:
+      - 'mongo-db:/bitnami/mongodb'
 
 volumes:
-  mongodb_data:
-    driver: local
+  mongo-db:
+
