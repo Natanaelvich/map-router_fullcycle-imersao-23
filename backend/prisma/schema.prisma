@@ -9,3 +9,25 @@ datasource db {
     provider = "mongodb"
     url      = env("DATABASE_URL")
 }
+
+model Route {
+    id          String   @id @default(auto()) @map("_id") @db.ObjectId
+    name        String
+    source      Place
+    destination Place
+    created_at  DateTime @default(now())
+    updated_at  DateTime @updatedAt
+    distance    Float
+    duration    Float
+    directions  Json
+}
+
+type Place {
+    name     String
+    location Coord
+}
+
+type Coord {
+    lat Float
+    lng Float
+}
