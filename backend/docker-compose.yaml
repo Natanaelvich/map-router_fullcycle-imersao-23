@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+
+  mongo:
+    image: bitnami/mongodb:latest
+    volumes:
+      - mongodb_data:/bitnami/mongodb
+    environment:
+      MONGODB_ROOT_PASSWORD: root
+      MONGODB_REPLICA_SET_MODE: primary
+      MONGODB_REPLICA_SET_KEY: 123456
+      MONGODB_DATABASE: map_router
+
+volumes:
+  mongodb_data:
+    driver: local
