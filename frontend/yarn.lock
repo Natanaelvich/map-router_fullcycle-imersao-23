@@ -62,6 +62,13 @@
     query-string "^7.1.3"
     retry-axios "^2.6.0"
 
+"@googlemaps/js-api-loader@^1.16.2":
+  version "1.16.2"
+  resolved "https://registry.yarnpkg.com/@googlemaps/js-api-loader/-/js-api-loader-1.16.2.tgz#3fe748e21243f8e8322c677a5525c569ae9cdbe9"
+  integrity sha512-psGw5u0QM6humao48Hn4lrChOM2/rA43ZCm3tKK9qQsEj1/VzqkCqnvGfEOshDbBQflydfaRovbKwZMF4AyqbA==
+  dependencies:
+    fast-deep-equal "^3.1.3"
+
 "@googlemaps/url-signature@^1.0.4":
   version "1.0.29"
   resolved "https://registry.yarnpkg.com/@googlemaps/url-signature/-/url-signature-1.0.29.tgz#3752501f1e4d828eb207985c3254136b34e07339"

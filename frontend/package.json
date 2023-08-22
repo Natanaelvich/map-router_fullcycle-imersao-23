@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.2",
     "@rocketseat/eslint-config": "^2.1.0",
     "@types/node": "20.5.1",
     "@types/react": "18.2.20",
