@@ -1,6 +1,12 @@
 'use client'
 
+import { useMap } from '@/hooks/useMap'
+import { useRef } from 'react'
+
 export function NewRoutePage() {
+  const mapContainerRef = useRef<HTMLDivElement>(null)
+  const map = useMap(mapContainerRef)
+
   return (
     <div className="flex flex-row h-full">
       <div>
@@ -11,9 +17,7 @@ export function NewRoutePage() {
           <button type="submit">Pesquisar</button>
         </form>
       </div>
-      <div id="map" className="h-full w-full">
-        <h1>Map</h1>
-      </div>
+      <div id="map" className="h-full w-full" ref={mapContainerRef}></div>
     </div>
   )
 }
