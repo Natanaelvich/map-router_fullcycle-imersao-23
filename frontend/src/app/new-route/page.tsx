@@ -11,7 +11,7 @@ export function NewRoutePage() {
 
   return (
     <div className="flex flex-row h-full">
-      <div className="flex flex-col w-1/4 py-2 px-6 gap-6">
+      <div className="flex flex-col w-1/4 py-2 px-6 gap-6 bg-gray-800 text-white">
         <h1 className="text-2xl">Nova rota</h1>
         <form className="flex flex-col gap-4">
           <Input name="source_place" placeholder="origem" />
