@@ -11,7 +11,7 @@ export function Button(props: ButtonProps) {
         'rounded-lg px-4 py-2 text-sm font-semibold outline-none shadow-sm',
         'focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-violet-500',
         'active:opacity-80',
-        'bg-yellow-500 text-white',
+        'bg-yellow-500 text-gray-900',
         props.className,
       )}
     />
