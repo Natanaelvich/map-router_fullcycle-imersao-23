@@ -1,7 +1,7 @@
-import { HTMLAttributes } from 'react'
+import { InputHTMLAttributes } from 'react'
 import { twMerge } from 'tailwind-merge'
 
-export type InputProps = HTMLAttributes<HTMLInputElement>
+export type InputProps = InputHTMLAttributes<HTMLInputElement>
 
 export function Input(props: InputProps) {
   return (
