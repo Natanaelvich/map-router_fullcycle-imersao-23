@@ -3,6 +3,7 @@
 
 import { Button } from '@/components/Button'
 import { Input } from '@/components/Input'
+import { Toast } from '@/components/Toast'
 import { useMap } from '@/hooks/useMap'
 import {
   DirectionsResponseData,
@@ -149,6 +150,8 @@ export function NewRoutePage() {
             </div>
           </div>
         )}
+
+        <Toast open={open} onClose={() => setOpen(false)} title="Rota criada" />
       </div>
       <div id="map" className="h-full w-full" ref={mapContainerRef}></div>
     </div>
