@@ -1,6 +1,7 @@
 'use client'
 
 import { Button } from '@/components/Button'
+import { RouteSelect } from '@/components/RouteSelect'
 import { useMap } from '@/hooks/useMap'
 import { Route } from '@/utils/model'
 import { socket } from '@/utils/socket-io'
@@ -60,15 +61,13 @@ export function DriverPage() {
   }
 
   return (
-    <div style={{ display: 'flex', flex: 1 }}>
-      <div>
+    <div className="flex flex-row h-full">
+      <div className="flex flex-col w-80 py-2 px-6 gap-6 bg-gray-800 text-white">
         <h1>Nova rota</h1>
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
-          {/* <RouteSelect id="route" /> */}
-          <Button onClick={startRoute}>Iniciar a viagem</Button>
-        </div>
+        <RouteSelect id="route" />
+        <Button onClick={startRoute}>Iniciar a viagem</Button>
       </div>
-      <div id="map" ref={mapContainerRef}></div>
+      <div id="map" ref={mapContainerRef} className="h-full w-full"></div>
     </div>
   )
 }
