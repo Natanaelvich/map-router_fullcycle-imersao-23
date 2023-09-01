@@ -9,6 +9,7 @@ import {
   DirectionsResponseData,
   FindPlaceFromTextResponseData,
 } from '@googlemaps/google-maps-services-js'
+import Link from 'next/link'
 import { FormEvent, useRef, useState } from 'react'
 
 export function NewRoutePage() {
@@ -152,6 +153,14 @@ export function NewRoutePage() {
         )}
 
         <Toast open={open} onClose={() => setOpen(false)} title="Rota criada" />
+
+        <Link
+          className="mt-auto bg-red-500 hover:bg-red-600 text-white text-center font-semibold py-2 px-4 rounded"
+          href={'/driver'}
+          passHref
+        >
+          VER TODAS AS ROTAS
+        </Link>
       </div>
       <div id="map" className="h-full w-full" ref={mapContainerRef}></div>
     </div>
