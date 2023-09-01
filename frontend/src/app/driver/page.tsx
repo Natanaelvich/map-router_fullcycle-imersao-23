@@ -63,7 +63,7 @@ export function DriverPage() {
   return (
     <div className="flex flex-row h-full">
       <div className="flex flex-col w-80 py-2 px-6 gap-6 bg-gray-800 text-white">
-        <h1>Nova rota</h1>
+        <h1 className="text-2xl">Navegação</h1>
         <RouteSelect id="route" />
         <Button onClick={startRoute}>Iniciar a viagem</Button>
       </div>
