@@ -22,6 +22,12 @@ Developed during [Immersion FullCycle](https://imersao.fullcycle.com.br/)
 
 - NestJS
 - NextJS
+- Socket.io
+- MongoDB
+- Docker
+- Docker Compose
+- Google Maps API
+- Kafka
 
 ## License
 
