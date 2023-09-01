@@ -27,10 +27,10 @@ export function RouteSelect(props: RouteSelectProps) {
       onChange={(event) => props.onChange && props.onChange(event.target.value)}
       className="rounded-lg px-4 py-2 text-sm font-semibold outline-none shadow-sm focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-violet-500 active:opacity-80 bg-white text-gray-900"
     >
-      {isLoading && <option value="">Loading...</option>}
+      {isLoading && <option value="">Carregando...</option>}
       {routes && (
         <>
-          <option value="">Select a route</option>
+          <option value="">Selecione uma rota</option>
           {routes!.map((route) => (
             <option key={route.id} value={route.id}>
               {route.name}
