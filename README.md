@@ -28,6 +28,9 @@ Developed during [Immersion FullCycle](https://imersao.fullcycle.com.br/)
 - Docker Compose
 - Google Maps API
 - Kafka
+- Prometheus
+- Redis
+- Bull
 
 ## License
 
